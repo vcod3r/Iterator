@@ -41,6 +41,11 @@ namespace TestIterator
             public List<ElementA> vecElementA { get; set; }
             public List<ElementB> vecElementB { get; set; }
 
+            /// <summary>
+            /// Creates a full collection of pairs
+            /// </summary>
+            /// <param name="source"></param>
+            /// <returns></returns>
             public IEnumerable<Pair> MakePairsCollection(ValueSource source)
             {
                 switch (source)
@@ -62,6 +67,11 @@ namespace TestIterator
                 }
             }
 
+            /// <summary>
+            /// Creates an iterator that yields the pairs
+            /// </summary>
+            /// <param name="source"></param>
+            /// <returns></returns>
             public IEnumerable<Pair> MakePairsYield(ValueSource source)
             {
                 switch (source)
